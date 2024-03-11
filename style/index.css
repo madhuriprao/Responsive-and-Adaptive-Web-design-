@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  max-width: 487px;
+  max-width: 1000px;
   height: 10vh;
   margin: 5px;
   display: flex;
@@ -27,6 +27,7 @@ header {
 .logo {
   font-size: 24px;
   font-family: "Actor", sans-serif;
+  color: white;
 }
 
 .nav {
@@ -35,9 +36,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 10px;
-  font-size: 16px;
-  font-family: "Source Sans 3", sans-serif;
+  padding: 10px;
 }
 .nav__list {
   list-style: none;
@@ -46,17 +45,19 @@ header {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  font-family: "Source Sans 3", sans-serif;
 }
 .nav__link {
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 .nav__link:hover {
   color: blue;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   margin: 10px;
   min-height: 20px;
@@ -65,19 +66,25 @@ header {
 }
 
 .card {
-  max-width: 550px;
+  max-width: 1000px;
   min-height: 400px;
-  object-fit: cover;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 10px;
 }
 
-.card__info {
-  min-width: 100px;
+.card__title {
+  font-size: 84px;
 }
-.card__image {
-  display: flex;
-  flex-wrap: wrap;
+
+.card__info {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .card__image img {
+    width: 100%;
+    height: auto;
+  }
 }
